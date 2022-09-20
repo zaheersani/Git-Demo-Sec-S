@@ -11,7 +11,8 @@ app.use('/user', userRouter)
 const port = 3000
 
 app.get('/', (req, res) => {
-    res.send('Hello Universe!')
+    var msg = 'Hello Universe!'
+    res.send(msg)
 })
 
 app.listen(port, () => {
